@@ -1,0 +1,17 @@
+{
+    "name": "linxyyl/mating",
+    "authors": [
+        {
+            "name": "drizzle",
+            "email": "linxyyl@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "linxyyl\\mating\\": "src/"
+        }
+    }
+}

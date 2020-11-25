@@ -114,7 +114,7 @@ class Mating
             'ele_11' => self::getLetters(),
             'ele_12' => self::getNumber(),
         ];
-        
+
         return str_shuffle(implode('', $ele));
     }
 }

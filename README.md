@@ -13,4 +13,4 @@
 
 `Mating:: numberString();` 生成一个随机纯数字,可用参数指定长度,默认32位,最长1024
 
-`Mating:: superString();`  生成一个随机不知道什么玩意的字符串,默认32位
+`Mating:: superString();`  生成一个随机超级字符串,默认32位

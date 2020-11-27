@@ -52,8 +52,8 @@ class Mating
      */
     public static function superString(int $length = 32)
     {
-        if ($length > 9522) {
-            $length = 9522;
+        if ($length > 9999) {
+            $length = 9999;
         }
 
         return substr(static::getSuper(), 0, $length);
@@ -106,15 +106,12 @@ class Mating
             'ele_6 ' => md5(str_shuffle('1234567890')),// 32
             'ele_7 ' => str_shuffle('[@$%*(=]!'),// 9
             'ele_8' => substr(password_hash(md5(uniqid()), PASSWORD_BCRYPT), 32), //32
-            'ele_9' => self::upperString(1024),
-            'ele_9' => self::lowerString(1024),
-            'ele_9' => self::numberString(1024),
-            'ele_9' => self::getLetters(),
-            'ele_10' => self::getNumber(),
-            'ele_11' => self::getLetters(),
-            'ele_12' => self::getNumber(),
         ];
-
-        return str_shuffle(implode('', $ele));
+        $str = '';
+        $str1 = implode('', $ele);
+        for ($i=0;$i<=20;$i++){
+            $str.= str_shuffle($str1);
+        }
+        return $str;
     }
 }

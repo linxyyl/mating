@@ -92,7 +92,7 @@ class Mating
      * @param int $length
      * @return string
      */
-    private static function getSuper(): string
+    private static function getSuper()
     {
 
         $ele = [
